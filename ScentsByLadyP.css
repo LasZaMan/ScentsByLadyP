@@ -1,0 +1,323 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-nav a:hover {
+    background-color: rgb(32, 107, 206);
+    /* border-radius: 7px; */
+}
+
+.navbar-light .navbar-brand {
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #000;
+}
+
+.navbar-light .navbar-nav .navbar-link {
+    color: #000;
+}
+
+.w-100 {
+    height: 100vh;
+}
+
+.priceTag {
+    color: rgb(163, 255, 25);
+}
+
+/* Slideshow CSS */
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+/* responsive css */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption {
+        bottom: 370px;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .carousel-caption {
+        bottom: 125px;
+    }
+
+    .carousel-caption h5 {
+        padding: 17px;
+        font-size: 25px;
+    }
+
+    .carousel-caption a {
+        padding: 10px 15px;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+
+    .about-text p,
+    #sectionPara,
+    #productPara {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+
+    .about-text h2,
+    #sectionHeading,
+    #productHeading {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 24px;
+        margin-top: 25px;
+    }
+
+    .cardmain {
+        margin-top: 20px;
+    }
+
+    .pinnedup {
+        margin-top: -120px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-body p {
+        font-size: 15px;
+    }
+}
+
+/* main {} */
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    display: none;
+}
+
+.mainDiv {
+    display: flex;
+    background-color: blueviolet;
+    justify-content: space-around;
+}
+
+.content ul {
+    display: flex;
+    gap: 20px;
+}
+
+.content ul li {
+    list-style: none;
+}
+
+.content ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.homeSection {
+    background-image: url(./images/shoefit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+p.heading {
+    font-size: 3rem;
+}
+
+p.paragraphContent {
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+.buttonDiv button {
+    padding: 0.6rem;
+    background-color: blueviolet;
+    color: white;
+    width: 20%;
+    border: 1px solid white;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+
+}
+
+.services {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.shoeFit {
+    border: 1px solid #ddd;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    flex-basis: 500px;
+}
+
+.repairService {
+    border: 1px solid #ddd;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    flex-basis: 500px;
+}
+
+.serviceImg {
+    max-width: 100%;
+}
+
+.homeDiv {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.head,
+.head1 {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ddd;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    flex-basis: 200px;
+    width: 100px;
+    height: 50px;
+
+}
+
+.head1 {
+    margin-right: 100px;
+}
+
+.productSection {
+    text-align: center;
+}
+
+
+/* .images2 {} */
+
+button.info {
+    padding: 0.6rem;
+    background-color: blueviolet;
+    color: white;
+    width: 20%;
+    border: 1px solid white;
+    margin-bottom: 3rem;
+}
+
+.cartButton {
+
+    background-color: aqua;
+    padding: 0.2rem;
+    width: 50%;
+    border-radius: 7px;
+    color: rgb(107, 139, 0);
+}
+
+.review {
+    display: flex;
+    gap: 0.5rem;
+    background-color: darkslategray;
+    padding: 0.7rem;
+}
+
+@media only screen and (max-width:480px) {
+
+    /* Style the button that is used to open and close the collapsible content */
+    .collapsible {
+        display: block;
+    }
+
+    .content ul {
+        display: block;
+    }
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active,
+    .collapsible:hover {
+        background-color: #ccc;
+    }
+
+    /* Style the collapsible content. Note: hidden by default */
+    .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
+}
