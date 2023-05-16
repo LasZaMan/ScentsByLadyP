@@ -73,6 +73,28 @@ margin-top: 50px;
 
 }
 
+/* Buy Now Page */
+
+.buyNowIP{
+    background: rgb(203, 203, 224);
+    display: block;
+    color: rgb(255, 26, 26);
+    width: auto;
+    border-radius: 5px;
+    margin-top: 2rem;
+    
+}
+.buyNowSubmit{
+    margin-top: 5rem;
+}
+.buyNow{
+    background: rgb(219, 209, 209);
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 5px;
+    justify-content: center;
+    padding: 2rem;
+}
 
 /* Card CSS */
 .services .card-body i{
