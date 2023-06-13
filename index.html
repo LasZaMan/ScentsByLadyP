@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="cartOn()">
     <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
         <div class="container">
             <a href="index.html" class="navbar-brand"><span class="text-light">Scents</span><span
@@ -41,7 +41,9 @@
                         <a href="#contactPage" class="nav-link text-light">Contact us</a>
                     </li>
                 </ul>
-
+ <!-- Cart Toggler -->
+ <button class="btn bg-success text-light col-lg-1" onclick="cartOn2()">Show Cart</button>
+ <button class="btn bg-danger text-light col-lg-1" onclick="cartOn()">Hide Cart</button>
             </div>
         </div>
     </nav>
@@ -83,7 +85,7 @@
                     <h4 class="lead priceTag text-warning">Retail Price: #5,000</h4>
                     <h4 class="lead priceTag">Wholesale Price: #3,500 &nbsp;<span class="text-light">MOQ: 6PCS</span>
                     </h4>
-                    <p><a href="buyNow.html" class="btn btn-primary mt3">Buy Now</a></p>
+                    <p><a class="btn btn-primary mt3">Buy Now</a></p>
                 </div>
             </div>
             <div class="carousel-item">
@@ -96,596 +98,1369 @@
                     <h4 class="lead priceTag text-warning">Retail Price: #2,500</h4>
                     <h4 class="lead priceTag">Wholesale Price: #1,200 &nbsp;<span class="text-light">MOQ: 12PCS</span>
                     </h4>
-                    <p><a href="buyNow.html" class="btn btn-primary mt3">Buy Now</a></p>
+                    <p><a class="btn btn-primary mt3">Buy Now</a></p>
                 </div>
-        primary
-            <div class="carousel-item">
-                <img src="./LadyP/IMG-20230318-WA0004.jpg" alt="Bag 1" class="d-block w-100">
-                <div class="carousel-caption">
-                    <h5>Size: 12ML</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ut adipisci dolores quos fugit
-                        voluptatibus. Cum deleniti sit nesciunt officiis vel a consequuntur hic quasi placeat
-                        laboriosam. Quo, dolores facilis eum odio in qui sed.</p>
-                    <h4 class="lead priceTag text-warning">Retail Price: #2,500</h4>
-                    <h4 class="lead priceTag">Wholesale Price: #1,200 &nbsp;<span class="text-light">MOQ: 12PCS</span>
-                    </h4>
-                    <p><a href="buyNow.html" class="btn btn-primary mt3">Buy Now</a></p>
+                primary
+                <div class="carousel-item">
+                    <img src="./LadyP/IMG-20230318-WA0004.jpg" alt="Bag 1" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Size: 12ML</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ut adipisci dolores quos
+                            fugit
+                            voluptatibus. Cum deleniti sit nesciunt officiis vel a consequuntur hic quasi placeat
+                            laboriosam. Quo, dolores facilis eum odio in qui sed.</p>
+                        <h4 class="lead priceTag text-warning">Retail Price: #2,500</h4>
+                        <h4 class="lead priceTag">Wholesale Price: #1,200 &nbsp;<span class="text-light">MOQ:
+                                12PCS</span>
+                        </h4>
+                        <p><a  class="btn btn-primary mt3">Buy Now</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./LadyP/IMG-20230318-WA0005.jpg" alt="Bag 2" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Size: 20ML</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ea doloribus necessitatibus
+                            accusantium doloremque illum aliquam id magnam voluptates error dolorem corrupti quibusdam
+                            eos
+                            similique, atque molestias neque earum. Illum modi velit aliquam in excepturi?</p>
+                        <h4 class="lead priceTag text-warning">Retail Price: #4,000</h4>
+                        <h4 class="lead priceTag">Wholesale Price: #2,000 &nbsp;<span class="text-light">MOQ:
+                                12PCS</span>
+                        </h4>
+                        <p><a class="btn btn-primary mt3">Buy Now</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./LadyP/IMG-20230318-WA0006.jpg" alt="Bag 3" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Size: 15ML</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique asperiores a, porro
+                            doloremque iusto repellendus natus perspiciatis recusandae, totam ex ratione ut! Dolorem
+                            voluptas hic vitae, accusantium quis optio, unde expedita saepe quibusdam ipsa vero.</p>
+                        <h4 class="lead priceTag text-warning">Retail Price: #3,000</h4>
+                        <h4 class="lead priceTag">Wholesale Price: #1,500 &nbsp;<span class="text-light">MOQ:
+                                12PCS</span>
+                        </h4>
+                        <p><a  class="btn btn-primary mt3">Buy Now</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./LadyP/IMG-20230318-WA0007.jpg" alt="Bag 4" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Combo Deal: (1)30ML + (1)6ML</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima culpa veniam quisquam
+                            provident
+                            odit, laudantium quod qui amet sint cum, maiores excepturi vitae aliquid eaque optio ipsum,
+                            quam
+                            harum delectus sequi cupiditate perspiciatis maxime. Eveniet.</p>
+                        <h4 class="lead priceTag">Price: #6,500</h4>
+                        <p><a  class="btn btn-primary mt3">Buy Now</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./LadyP/IMG-20230318-WA0008.jpg" alt="Bag 4" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Size: 10ML</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima culpa veniam quisquam
+                            provident
+                            odit, laudantium quod qui amet sint cum, maiores excepturi vitae aliquid eaque optio ipsum,
+                            quam
+                            harum delectus sequi cupiditate perspiciatis maxime. Eveniet.</p>
+                        <h4 class="lead priceTag text-warning">Retail Price: #2,000</h4>
+                        <h4 class="lead priceTag">Wholesale Price: #1,000 &nbsp;<span class="text-light">MOQ:
+                                12PCS</span>
+                        </h4>
+                        <p><a  class="btn btn-primary mt3">Buy Now</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./LadyP/IMG-20230318-WA0009.jpg" alt="Bag 4" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Size: 10ML</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima culpa veniam quisquam
+                            provident
+                            odit, laudantium quod qui amet sint cum, maiores excepturi vitae aliquid eaque optio ipsum,
+                            quam
+                            harum delectus sequi cupiditate perspiciatis maxime. Eveniet.</p>
+                        <h4 class="lead priceTag text-warning">Retail Price: #2,000</h4>
+                        <h4 class="lead priceTag">Wholesale Price: #1,000 &nbsp;<span class="text-light">MOQ:
+                                12PCS</span>
+                        </h4>
+                        <p><a class="btn btn-primary mt3">Buy Now</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./LadyP/IMG-20230318-WA0010.jpg" alt="Bag 4" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Size: 6ML</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima culpa veniam quisquam
+                            provident
+                            odit, laudantium quod qui amet sint cum, maiores excepturi vitae aliquid eaque optio ipsum,
+                            quam
+                            harum delectus sequi cupiditate perspiciatis maxime. Eveniet.</p>
+                        <h4 class="lead priceTag text-warning">Retail Price: #1,000</h4>
+                        <h4 class="lead priceTag">Wholesale Price: #6,00 &nbsp;<span class="text-light">MOQ:
+                                12PCS</span>
+                        </h4>
+                        <p><a class="btn btn-primary mt3">Buy Now</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./LadyP/IMG-20230318-WA0011.jpg" alt="Bag 4" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Wholesale Deal: 50PCS OF 6ML</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima culpa veniam quisquam
+                            provident
+                            odit, laudantium quod qui amet sint cum, maiores excepturi vitae aliquid eaque optio ipsum,
+                            quam
+                            harum delectus sequi cupiditate perspiciatis maxime. Eveniet.</p>
+                        <h4 class="lead priceTag">Price: #30,000</h4>
+                        <p><a  class="btn btn-primary mt3">Buy Now</a></p>
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="./LadyP/IMG-20230318-WA0005.jpg" alt="Bag 2" class="d-block w-100">
-                <div class="carousel-caption">
-                    <h5>Size: 20ML</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ea doloribus necessitatibus
-                        accusantium doloremque illum aliquam id magnam voluptates error dolorem corrupti quibusdam eos
-                        similique, atque molestias neque earum. Illum modi velit aliquam in excepturi?</p>
-                    <h4 class="lead priceTag text-warning">Retail Price: #4,000</h4>
-                    <h4 class="lead priceTag">Wholesale Price: #2,000 &nbsp;<span class="text-light">MOQ: 12PCS</span>
-                    </h4>
-                    <p><a href="buyNow.html" class="btn btn-primary mt3">Buy Now</a></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./LadyP/IMG-20230318-WA0006.jpg" alt="Bag 3" class="d-block w-100">
-                <div class="carousel-caption">
-                    <h5>Size: 15ML</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique asperiores a, porro
-                        doloremque iusto repellendus natus perspiciatis recusandae, totam ex ratione ut! Dolorem
-                        voluptas hic vitae, accusantium quis optio, unde expedita saepe quibusdam ipsa vero.</p>
-                    <h4 class="lead priceTag text-warning">Retail Price: #3,000</h4>
-                    <h4 class="lead priceTag">Wholesale Price: #1,500 &nbsp;<span class="text-light">MOQ: 12PCS</span>
-                    </h4>
-                    <p><a href="buyNow.html" class="btn btn-primary mt3">Buy Now</a></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./LadyP/IMG-20230318-WA0007.jpg" alt="Bag 4" class="d-block w-100">
-                <div class="carousel-caption">
-                    <h5>Combo Deal: (1)30ML + (1)6ML</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima culpa veniam quisquam provident
-                        odit, laudantium quod qui amet sint cum, maiores excepturi vitae aliquid eaque optio ipsum, quam
-                        harum delectus sequi cupiditate perspiciatis maxime. Eveniet.</p>
-                    <h4 class="lead priceTag">Price: #6,500</h4>
-                    <p><a href="buyNow.html" class="btn btn-primary mt3">Buy Now</a></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./LadyP/IMG-20230318-WA0008.jpg" alt="Bag 4" class="d-block w-100">
-                <div class="carousel-caption">
-                    <h5>Size: 10ML</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima culpa veniam quisquam provident
-                        odit, laudantium quod qui amet sint cum, maiores excepturi vitae aliquid eaque optio ipsum, quam
-                        harum delectus sequi cupiditate perspiciatis maxime. Eveniet.</p>
-                    <h4 class="lead priceTag text-warning">Retail Price: #2,000</h4>
-                    <h4 class="lead priceTag">Wholesale Price: #1,000 &nbsp;<span class="text-light">MOQ: 12PCS</span>
-                    </h4>
-                    <p><a href="buyNow.html" class="btn btn-primary mt3">Buy Now</a></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./LadyP/IMG-20230318-WA0009.jpg" alt="Bag 4" class="d-block w-100">
-                <div class="carousel-caption">
-                    <h5>Size: 10ML</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima culpa veniam quisquam provident
-                        odit, laudantium quod qui amet sint cum, maiores excepturi vitae aliquid eaque optio ipsum, quam
-                        harum delectus sequi cupiditate perspiciatis maxime. Eveniet.</p>
-                    <h4 class="lead priceTag text-warning">Retail Price: #2,000</h4>
-                    <h4 class="lead priceTag">Wholesale Price: #1,000 &nbsp;<span class="text-light">MOQ: 12PCS</span>
-                    </h4>
-                    <p><a href="buyNow.html" class="btn btn-primary mt3">Buy Now</a></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./LadyP/IMG-20230318-WA0010.jpg" alt="Bag 4" class="d-block w-100">
-                <div class="carousel-caption">
-                    <h5>Size: 6ML</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima culpa veniam quisquam provident
-                        odit, laudantium quod qui amet sint cum, maiores excepturi vitae aliquid eaque optio ipsum, quam
-                        harum delectus sequi cupiditate perspiciatis maxime. Eveniet.</p>
-                    <h4 class="lead priceTag text-warning">Retail Price: #1,000</h4>
-                    <h4 class="lead priceTag">Wholesale Price: #6,00 &nbsp;<span class="text-light">MOQ: 12PCS</span>
-                    </h4>
-                    <p><a href="buyNow.html" class="btn btn-primary mt3">Buy Now</a></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./LadyP/IMG-20230318-WA0011.jpg" alt="Bag 4" class="d-block w-100">
-                <div class="carousel-caption">
-                    <h5>Wholesale Deal: 50PCS OF 6ML</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima culpa veniam quisquam provident
-                        odit, laudantium quod qui amet sint cum, maiores excepturi vitae aliquid eaque optio ipsum, quam
-                        harum delectus sequi cupiditate perspiciatis maxime. Eveniet.</p>
-                    <h4 class="lead priceTag">Price: #30,000</h4>
-                    <p><a href="buyNow.html" class="btn btn-primary mt3">Buy Now</a></p>
-                </div>
-            </div>
+            <a class="carousel-control-prev" href="#carouseExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouseExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#carouseExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouseExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+
+        <!-- about section -->
+
+
+        <section id="about" class="about-section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <div class="about-img">
+                            <img src="./LadyP/IMG-20230318-WA0024.jpg" alt="About Image" class="img-fluid"
+                                id="Aboutimg">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                        <div class="about-text text-center pb-5">
+                            <h2>We provide best quality Perfumes and Fragrances <br> at affordable prices</h2>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ad
+                                soluta
+                                omnis officiis
+                                eligendi distinctio debitis aliquam eius fugit quidem provident, placeat consequatur
+                                culpa
+                                sunt vero iste repudiandae libero quos.</p>
+                            <!-- <h4 class="lead priceTag">Price: $25,000</h4> -->
+                            <a href="#goods" class="btn btn-primary">Start Shopping!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <div class="about-img">
+                            <img src="./LadyP/IMG-20230318-WA0014.jpg" alt="About Image" class="img-fluid"
+                                id="Aboutimg">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                        <div class="about-text text-center pb-5">
+                            <h2>We also offer prompt Delivery Services <br>Worldwide at affordable prices</h2>
+                            <p class="lead">This service offers customers the option to buy and their get goods
+                                delivered to
+                                their doorsteps <br>
+                                at thier own convenience, wherever, whenever.</p>
+                            <!-- <h4 class="lead priceTag">Price: $25,000</h4> -->
+                            <a href="#goods" class="btn btn-primary">Start Shopping!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- portfolio section -->
+
+        <section id="portfolio" class="portfolio section-padding">
+            <div class="container pinnedup">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section header text-center pb-5">
+                            <h2 id="productHeading">Our Products</h2>
+                            <p class="lead" id="productPara">We have a wide variety of perfumes, of many sizes, scents,
+                                fragrances<br> suitable for all occasions, outings, events, dresses, parties, etc. <br>
+                                You
+                                can
+                                also pre-order a custom scent/fragrance/type/size. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="goods">
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item1">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0002.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title title">Size: 30ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Retail Price: #5,500</h4>
+                                <h4 class="lead priceTag">Wholesale: #3,500 &nbsp;<span class="text-danger">MOQ:
+                                        6PCS</span>
+                                </h4>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1 (Retail)</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6 (Wholesale)</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item1)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item2">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0003.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Size: 12ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Retail Price: #2,500</h4>
+                                <h4 class="lead priceTag">Wholesale: #1,200 &nbsp;<span class="text-danger">MOQ:
+                                        12PCS</span>
+                                </h4>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1 (Retail)</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12 (Wholesale)</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item2)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item3">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0004.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Size: 12ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Retail Price: #2,500</h4>
+                                <h4 class="lead priceTag">Wholesale: #1,200 &nbsp;<span class="text-danger">MOQ:
+                                        12PCS</span>
+                                </h4>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1 (Retail)</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12 (Wholesale)</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item3)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cart-container">
+                        <!-- Cart Card -->
+                        <div class="cart" id="cart">
+                            <div class="title">CART</div>
+                            <hr />
+                            <div id="title"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item4">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0005.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Size: 20ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Retail Price: #4,000</h4>
+                                <h4 class="lead priceTag">Wholesale: #2,000 &nbsp;<span class="text-danger">MOQ:
+                                        12PCS</span>
+                                </h4>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1(Retail)</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12 (Wholesale)</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item4)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item5">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0006.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Size: 15ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Retail Price: #3,000</h4>
+                                <h4 class="lead priceTag">Wholesale: #1,500 &nbsp;<span class="text-danger">MOQ:
+                                        12PCS</span>
+                                </h4>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1 (Retail)</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6 (Wholesale)</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item5)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item6">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0007.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Combo Deal: (1)30ML + (1)6ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Price: #6,500</h4>
+                                <label class="lead text-danger">Quantity:</label>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <!-- <h4 class="lead priceTag">Wholesale: #1,500 &nbsp;<span class="text-danger">MOQ:
+                                    12PCS</span>
+                            </h4> -->
+                                <a class="btn bg-primary text-light" onclick="addToCart(item6)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item7">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0005.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Size: 20ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Retail Price: #4,000</h4>
+                                <h4 class="lead priceTag">Wholesale: #2,000 &nbsp;<span class="text-danger">MOQ:
+                                        12PCS</span>
+                                </h4>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1 (Retail)</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12 (Wholesale)</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item7)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item8">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0006.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Size: 15ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Retail Price: #3,000</h4>
+                                <h4 class="lead priceTag">Wholesale: #1,500 &nbsp;<span class="text-danger">MOQ:
+                                        12PCS</span>
+                                </h4>     <select class="text-primary">
+                                    <option value="1 pcs">1 (Retail)</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12 (Wholesale)</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item8)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item9">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0007.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Combo Deal: (1)30ML + (1)6ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Price: #6,500</h4>
+                                <label class="lead text-danger">Quantity:</label>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item9)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item10">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0008.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Size: 10ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Retail Price: #2,000</h4>
+                                <h4 class="lead priceTag">Wholesale: #1,000 &nbsp;<span class="text-danger">MOQ:
+                                        12PCS</span>
+                                </h4>    
+                                 <select class="text-primary">
+                                    <option value="1 pcs">1 (Retail)</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12 (Wholesale)</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item10)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item11">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0009.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Size: 10ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Retail Price: #2,000</h4>
+                                <h4 class="lead priceTag">Wholesale: #1,000 &nbsp;<span class="text-danger">MOQ:
+                                        12PCS</span>
+                                </h4>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1 (Retail)</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12 (Wholesale)</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item11)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item12">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0010.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Wholesale Deal: 50PCS of 6ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Price: #30,000</h4>
+                                <label class="lead text-danger">Quantity:</label>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item12)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item13">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0011.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Wholesale Deal: 50PCS of 3ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Price: #16,500</h4>
+                                <label class="lead text-danger">Quantity:</label>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item13)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item14">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0024.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Size: 50ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Retail Price: #8,500</h4>
+                                <h4 class="lead priceTag">Wholesale: #5,500 &nbsp;<span class="text-danger">MOQ:
+                                        3PCS</span>
+                                </h4>  
+                                <label class="lead text-danger">Quantity:</label>
+                                   <select class="text-primary">
+                                    <option value="1 pcs">1 (Retail)</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3 (Wholesale)</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item14)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item15">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0013.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Combo Deal: (1)6ML + (1)10ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Price: #3,000</h4>
+                                <label class="lead text-danger">Quantity:</label>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item15)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item16">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0014.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Size: 6ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Retail Price: #1,000</h4>
+                                <h4 class="lead priceTag">Wholesale: #600 &nbsp;<span class="text-danger">MOQ:
+                                        12PCS</span>
+                                </h4>     <select class="text-primary">
+                                    <option value="1 pcs">1 (Retail)</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12 (Wholesale)</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item16)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item17">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0015.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Wholesale Deal: 3PCS of 50ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!
+                                </p>
+                                <h4 class="lead priceTag text-warning">Price: #16,500</h4>
+                                <label class="lead text-danger">Quantity:</label>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item17)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item18">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0016.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Combo Deal: (12pcs)6ML + (12pcs)10ML + (30pcs)3ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    fhdgsiu e8s Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                                <h4 class="lead priceTag text-warning">Price: #41,700</h4>
+                                <label class="lead text-danger">Quantity:</label>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item18)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item19">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0017.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Combo Deal: (1)3ML + (1)6ML + (1)20ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Price: #5,500</h4>
+                                <label class="lead text-danger">Quantity:</label>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item19)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item20">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0018.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Combo Deal: (2pcs)6ML + (2pcs)30ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Price: #13,000</h4>
+                                <label class="lead text-danger">Quantity:</label>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item20)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item21">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0019.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Wholesale/Combo Deal: (12pcs)6ML + (12pcs)3ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    djdgu thrjddjrf djhd Lorem ipsum dolor, sit amet consectetur adipisicing.
+                                </p>
+                                <h4 class="lead priceTag text-warning">Price: #11,400</h4>
+                                <label class="lead text-danger">Quantity:</label>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item21)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item22">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0020.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Combo Deal: (1)3ML + (1)10ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Price: #2,500</h4>
+                                <label class="lead text-danger">Quantity:</label>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item22)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item23">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0023.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Size: 50ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+                                    consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
+                                <h4 class="lead priceTag text-warning">Retail Price: #8,500</h4>
+                                <h4 class="lead priceTag">Wholesale: #5,500 &nbsp;<span class="text-danger">MOQ:
+                                        3PCS</span>
+                                </h4>     
+                                <select class="text-primary">
+                                    <option value="1 pcs">1 (Retail)</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3 (Wholesale)</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" onclick="addToCart(item23)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center bg-white pb-2">
+                            <div class="card-body text dark" id="item24">
+                                <div class="img area mb-4">
+                                    <img src="./LadyP/IMG-20230318-WA0022.jpg" alt="" class="img-fluid">
+                                </div>
+                                <h3 class="card-title">Wholesale/Combo Deal: (12pcs)6ML + (12pcs)3ML + (6pcs)30ML</h3>
+                                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Errores!</p>
+                                <h4 class="lead priceTag text-warning">Price: #32,400</h4>
+                                <label class="lead text-danger">Quantity:</label>
+                                <select class="text-primary">
+                                    <option value="1 pcs">1</option>
+                                    <option value="2 pcs">2</option>
+                                    <option value="3 pcs">3</option>
+                                    <option value="4 pcs">4</option>
+                                    <option value="5 pcs">5</option>
+                                    <option value="6 pcs">6</option>
+                                    <option value="7 pcs">7</option>
+                                    <option value="8 pcs">8</option>
+                                    <option value="9 pcs">9</option>
+                                    <option value="10 pcs">10</option>
+                                    <option value="11 pcs">11</option>
+                                    <option value="12 pcs">12</option>
+                                    <option value="13 pcs">13</option>
+                                    <option value="14 pcs">14</option>
+                                    <option value="15 pcs">15</option>
+                                    <option value="16 pcs">16</option>
+                                    <option value="17 pcs">17</option>
+                                    <option value="18 pcs">18</option>
+                                    <option value="19 pcs">19</option>
+                                    <option value="20 pcs">20</option>
+                                    <option value="21 pcs">21</option>
+                                    <option value="22 pcs">22</option>
+                                    <option value="23 pcs">23</option>
+                                    <option value="24 pcs">24</option>
+                                    <option value="25 pcs">25</option>
+                                    <option value="26 pcs">26</option>
+                                    <option value="27 pcs">27</option>
+                                    <option value="28 pcs">28</option>
+                                </select>
+                                <a class="btn bg-primary text-light" id="buyNow" onclick="addToCart(item24)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </div>
 
-    <!-- about section -->
-
-
-    <section id="about" class="about-section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-12 col-12">
-                    <div class="about-img">
-                        <img src="./LadyP/IMG-20230318-WA0024.jpg" alt="About Image" class="img-fluid" id="Aboutimg">
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
-                    <div class="about-text text-center pb-5">
-                        <h2>We provide best quality Perfumes and Fragrances <br> at affordable prices</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ad soluta
-                            omnis officiis
-                            eligendi distinctio debitis aliquam eius fugit quidem provident, placeat consequatur culpa
-                            sunt vero iste repudiandae libero quos.</p>
-                        <!-- <h4 class="lead priceTag">Price: $25,000</h4> -->
-                        <a href="#goods" class="btn btn-primary">Start Shopping!</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about-section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-12 col-12">
-                    <div class="about-img">
-                        <img src="./LadyP/IMG-20230318-WA0014.jpg" alt="About Image" class="img-fluid" id="Aboutimg">
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
-                    <div class="about-text text-center pb-5">
-                        <h2>We also offer prompt Delivery Services <br>Worldwide at affordable prices</h2>
-                        <p class="lead">This service offers customers the option to buy and their get goods delivered to
-                            their doorsteps <br>
-                            at thier own convenience, wherever, whenever.</p>
-                        <!-- <h4 class="lead priceTag">Price: $25,000</h4> -->
-                        <a href="#goods" class="btn btn-primary">Start Shopping!</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- portfolio section -->
-
-    <section id="portfolio" class="portfolio section-padding">
-        <div class="container pinnedup">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section header text-center pb-5">
-                        <h2 id="productHeading">Our Products</h2>
-                        <p class="lead" id="productPara">We have a wide variety of perfumes, of many sizes, scents,
-                            fragrances<br> suitable for all occasions, outings, events, dresses, parties, etc. <br> You
-                            can
-                            also pre-order a custom scent/fragrance/type/size. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row" id="goods">
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0002.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Size: 30ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Retail Price: #5,500</h4>
-                            <h4 class="lead priceTag">Wholesale: #3,500 &nbsp;<span class="text-danger">MOQ: 6PCS</span>
-                            </h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0003.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Size: 12ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Retail Price: #2,500</h4>
-                            <h4 class="lead priceTag">Wholesale: #1,200 &nbsp;<span class="text-danger">MOQ:
-                                    12PCS</span>
-                            </h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0004.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Size: 12ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Retail Price: #2,500</h4>
-                            <h4 class="lead priceTag">Wholesale: #1,200 &nbsp;<span class="text-danger">MOQ:
-                                    12PCS</span>
-                            </h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0005.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Size: 20ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Retail Price: #4,000</h4>
-                            <h4 class="lead priceTag">Wholesale: #2,000 &nbsp;<span class="text-danger">MOQ:
-                                    12PCS</span>
-                            </h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0006.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Size: 15ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Retail Price: #3,000</h4>
-                            <h4 class="lead priceTag">Wholesale: #1,500 &nbsp;<span class="text-danger">MOQ:
-                                    12PCS</span>
-                            </h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0007.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Combo Deal: (1)30ML + (1)6ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Price: #6,500</h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0005.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Size: 20ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Retail Price: #4,000</h4>
-                            <h4 class="lead priceTag">Wholesale: #2,000 &nbsp;<span class="text-danger">MOQ:
-                                    12PCS</span>
-                            </h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0006.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Size: 15ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Retail Price: #3,000</h4>
-                            <h4 class="lead priceTag">Wholesale: #1,500 &nbsp;<span class="text-danger">MOQ:
-                                    12PCS</span>
-                            </h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0007.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Combo Deal: (1)30ML + (1)6ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Price: #6,500</h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0008.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Size: 10ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Retail Price: #2,000</h4>
-                            <h4 class="lead priceTag">Wholesale: #1,000 &nbsp;<span class="text-danger">MOQ:
-                                    12PCS</span>
-                            </h4>
-                            <!-- <h4 class="lead priceTag">Wholesale: #1,200 &nbsp;<span class="text-danger">MOQ: 12PCS</span>
-                                </h4> -->
-                                <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0009.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Size: 10ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Retail Price: #2,000</h4>
-                            <h4 class="lead priceTag">Wholesale: #1,000 &nbsp;<span class="text-danger">MOQ:
-                                    12PCS</span>
-                            </h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0010.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Wholesale Deal: 50PCS of 6ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Price: #30,000</h4>
-                            <!-- <h4 class="lead priceTag">Wholesale: #1,000 &nbsp;<span class="text-danger">MOQ: 12PCS</span>
-                                </h4> -->
-                                <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0011.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Wholesale Deal: 50PCS of 3ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Price: #16,500</h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0024.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Size: 50ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Retail Price: #8,500</h4>
-                            <h4 class="lead priceTag">Wholesale: #5,500 &nbsp;<span class="text-danger">MOQ: 3PCS</span>
-                            </h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0013.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Combo Deal: (1)6ML + (1)10ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Price: #3,000</h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0014.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Size: 6ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Retail Price: #1,000</h4>
-                            <h4 class="lead priceTag">Wholesale: #600 &nbsp;<span class="text-danger">MOQ: 12PCS</span>
-                            </h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0015.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Wholesale Deal: 3PCS of 50ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!
-                            </p>
-                            <h4 class="lead priceTag text-warning">Price: #16,500</h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0016.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Combo Deal: (12pcs)6ML + (12pcs)10ML + (30pcs)3ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                fhdgsiu e8s Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <h4 class="lead priceTag text-warning">Price: #41,700</h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0017.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Combo Deal: (1)3ML + (1)6ML + (1)20ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Price: #5,500</h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0018.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Combo Deal: (2pcs)6ML + (2pcs)30ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Price: #13,000</h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0019.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Wholesale/Combo Deal: (12pcs)6ML + (12pcs)3ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                djdgu thrjddjrf djhd Lorem ipsum dolor, sit amet consectetur adipisicing.
-                            </p>
-                            <h4 class="lead priceTag text-warning">Price: #11,400</h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0020.jpg" alt="" class="img-fluid">
-                            </div>
-                            h3 class="card-title">Combo Deal: (1)3ML + (1)10ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Price: #2,500</h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0023.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Size: 50ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-                                consequatur. Recusandae molestiae nam incidunt commodi suscipit asperiores!</p>
-                            <h4 class="lead priceTag text-warning">Retail Price: #8,500</h4>
-                            <h4 class="lead priceTag">Wholesale: #5,500 &nbsp;<span class="text-danger">MOQ: 3PCS</span>
-                            </h4>
-                            <a href="buyNow.html" class="btn bg-primary text-light">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="card text-center bg-white pb-2">
-                        <div class="card-body text dark">
-                            <div class="img area mb-4">
-                                <img src="./LadyP/IMG-20230318-WA0022.jpg" alt="" class="img-fluid">
-                            </div>
-                            <h3 class="card-title">Wholesale/Combo Deal: (12pcs)6ML + (12pcs)3ML + (6pcs)30ML</h3>
-                            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Errores!</p>
-                            <h4 class="lead priceTag text-warning">Price: #32,400</h4>
-
-                            <a href="buyNow.html" class="btn bg-primary text-light" id="buyNow">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    </div>
-
     </div>
     </div>
 
 
-<footer class="footer">
-    <div class="footersContainer">
-                <a href="index.html" class="navbar-brand"><span class="text-light">Scents</span><span
+    <footer class="footer">
+        <div class="footersContainer">
+            <a href="index.html" class="navbar-brand"><span class="text-light">Scents</span><span
                     class="text-primary">By</span><span class="text-light">LadyP</span></a>
-                <h4>Contact Us</h4>
-                <ul>
-                    <li>
-                        
-                        <a href="https://web.facebook.com/paradise.kingsley.31" target="_blank"><i class="fa fa-facebook" aria-hidden="true">Facebook</i></a>
-                        <a href="https://twitter.com/Built4Enjoyment" target="_blank"><i class="fa fa-twitter" aria-hidden="true">Twitter</i></a>
-                        <a href="https://instagram.com/scents_byladyp?igshid=NTc4MTIwNjQ2YQ==" target="_blank"><i class="fa fa-instagram" aria-hidden="true">Instagram</i></a>
-                        <a href="https://wa.me/2348061226907" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true">Whatsapp</i></a>
-                        <a href="https://www.google.com.ng/maps/place/105102,+Oworonshoki,+Lagos/@6.548666,3.4022075,13z/data=!4m6!3m5!1s0x103b8d43ca19ada9:0xdde8c88fb84eab11!8m2!3d6.5536278!4d3.4006205!16s%2Fg%2F11cknffjft?hl=en" target="_blank"><i class="fa fa-map-marker" aria-hidden="true">Lagos, Nigeria</i></a>
-                        <a href="tel:08061226907"target="_blank"><i class="fa fa-phone" aria-hidden="true">+2348061226907</i></a>
-                        <a href="mailto:ScentsbyladyP@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true">ScentsbyladyP@gmail.com</i></a>
-                        
-                    </li>
-                </ul>
-    </div>
-</footer>
+            <h4>Contact Us</h4>
+            <ul>
+                <li>
+
+                    <a href="https://web.facebook.com/paradise.kingsley.31" target="_blank"><i class="fa fa-facebook"
+                            aria-hidden="true">Facebook</i></a>
+                    <a href="https://twitter.com/Built4Enjoyment" target="_blank"><i class="fa fa-twitter"
+                            aria-hidden="true">Twitter</i></a>
+                    <a href="https://instagram.com/scents_byladyp?igshid=NTc4MTIwNjQ2YQ==" target="_blank"><i
+                            class="fa fa-instagram" aria-hidden="true">Instagram</i></a>
+                    <a href="https://wa.me/2348061226907" target="_blank"><i class="fa fa-whatsapp"
+                            aria-hidden="true">Whatsapp</i></a>
+                    <a href="https://www.google.com.ng/maps/place/105102,+Oworonshoki,+Lagos/@6.548666,3.4022075,13z/data=!4m6!3m5!1s0x103b8d43ca19ada9:0xdde8c88fb84eab11!8m2!3d6.5536278!4d3.4006205!16s%2Fg%2F11cknffjft?hl=en"
+                        target="_blank"><i class="fa fa-map-marker" aria-hidden="true">Lagos, Nigeria</i></a>
+                    <a href="tel:08061226907" target="_blank"><i class="fa fa-phone"
+                            aria-hidden="true">+2348061226907</i></a>
+                    <a href="mailto:ScentsbyladyP@gmail.com" target="_blank"><i class="fa fa-envelope"
+                            aria-hidden="true">ScentsbyladyP@gmail.com</i></a>
+
+                </li>
+            </ul>
+        </div>
+    </footer>
     <script src="https://use.fontawesome.com/bb36df3d37.js"></script>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="bootstrap-5.2.2/js/bootstrap.min.js"></script>
     <script src="jquery3.6.1.js"></script>
     <script src="bootstrap.bundle.js"></script>
+    <script src="ScentsByLadyP.js"></script>
 </body>
 
 </html>
