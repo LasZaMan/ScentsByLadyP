@@ -42,8 +42,8 @@
                     </li>
                 </ul>
  <!-- Cart Toggler -->
- <button class="btn bg-success text-light col-lg-1" onclick="cartOn2()">Show Cart</button>
- <button class="btn bg-danger text-light col-lg-1" onclick="cartOn()">Hide Cart</button>
+ <button id="mainTg" class="btn bg-success text-light col-lg-1" onclick="cartOn2()">Show Cart</button>
+ <button id="mainTg2" class="btn bg-danger text-light col-lg-1" onclick="cartOn()">Hide Cart</button>
             </div>
         </div>
     </nav>
@@ -230,6 +230,13 @@
             </a>
         </div>
 
+
+        <!-- Cart Toggle Buttons for Mobile -->
+
+        <div id="cartTogglers">
+            <button id="showCart" class="btn bg-success text-light col-lg-1" onclick="cartOn2()">Show Cart</button>
+            <button id="hideCart" class="btn bg-danger text-light col-lg-1" onclick="cartOn()">Hide Cart</button>
+        </div>
         <!-- about section -->
 
 

@@ -3,7 +3,7 @@
 
 var addItemId = 0;
 function addToCart(item){
-    alert('Item Successfully Added to Cart');
+    
     cartOn2();
     addItemId += 1;
 var selectedItem = document.createElement('div');
@@ -35,6 +35,7 @@ selectedItem.append(label);
 selectedItem.append(label2);
 selectedItem.append(delBtn);
 cartItems.append(selectedItem);
+alert('Item Successfully Added to Cart');
 }
 
 //-----------------Remove Item From Cart------------------//
